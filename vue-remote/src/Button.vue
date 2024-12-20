@@ -1,11 +1,14 @@
 <template>
   <div class="mf-remote1">
     <h2>Remote Button</h2>
-    <button @click="handleClick">Click me times: {{ count }}</button>
+    <mp-button variant="secondary" @click="handleClick">
+      Click me times: {{ count }}
+    </mp-button>
   </div>
 </template>
 <script setup>
 import { ref, onMounted } from "vue";
+import { MpButton } from "@mekari/pixel3";
 
 const count = ref(0);
 

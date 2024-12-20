@@ -1,8 +1,9 @@
-import "./assets/main.css";
-
 import { createApp, defineAsyncComponent } from "vue";
 import App from "./App.vue";
 import router from "./router";
+
+import "./pixel.css";
+import "./assets/main.css";
 
 const app = createApp(App);
 

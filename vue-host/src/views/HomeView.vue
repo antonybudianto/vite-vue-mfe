@@ -2,16 +2,17 @@
   <main>
     <h1>Hello Host</h1>
     <div>
-      count: <span>{{ count }}</span> &nbsp;
-      <button type="button" @click="handleClick">Click me</button>
+      count: <span style="width: 10px">{{ count }}</span>
     </div>
-    <div></div>
-    <div>
+    <mp-button @click="handleClick">Click me</mp-button>
+    <hr />
+    <mp-flex mt="10px" justify="center">
       <RemoteButton />
-    </div>
+    </mp-flex>
   </main>
 </template>
 <script setup>
+import { MpButton, MpFlex, css } from "@mekari/pixel3";
 import { ref, onMounted } from "vue";
 const count = ref(0);
 
