@@ -17,7 +17,7 @@ export default defineConfig({
       filename: "remoteEntry.js",
       // Modules to expose
       exposes: {
-        "./Button": "./src/Button.vue"
+        "./ContactMFE": "./src/ContactMFE.vue"
       },
       shared: ["vue"]
     })

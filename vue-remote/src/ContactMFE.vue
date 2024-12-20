@@ -1,6 +1,6 @@
 <template>
   <div class="mf-remote1">
-    <h2>Remote Button</h2>
+    <h2>Remote Contact MFE</h2>
     <mp-button variant="secondary" @click="handleClick">
       Click me times: {{ count }}
     </mp-button>

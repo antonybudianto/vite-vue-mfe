@@ -7,8 +7,10 @@ import "./assets/main.css";
 
 const app = createApp(App);
 
-const RemoteButton = defineAsyncComponent(() => import("remote_app/Button"));
+const RemoteContactMFE = defineAsyncComponent(
+  () => import("remote_app/ContactMFE")
+);
 
 app.use(router);
-app.component("RemoteButton", RemoteButton);
+app.component("RemoteContactMFE", RemoteContactMFE);
 app.mount("#app");

@@ -14,10 +14,13 @@
     "@originjs/vite-plugin-federation": "^1.3.6",
     "vue": "^3.5.13",
     "vue-router": "^4.4.5",
+    "@vueuse/core": "^10.7.2",
     "@mekari/pixel3": "1.0.0-dev.0",
     "@mekari/pixel3-postcss": "1.0.0-dev.0",
     "@mekari/pixel3-styled-system": "0.1.2-dev.0",
-    "@mekari/pixel3-utils": "0.0.7-dev.0"
+    "@mekari/pixel3-utils": "0.0.7-dev.0",
+    "@mekari/pixel3-theme": "0.2.2-dev.0",
+    "@mekari/pixel3-cli": "0.0.3-dev.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.0",

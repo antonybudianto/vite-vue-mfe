@@ -1,1 +1,9 @@
 @layer pixel_reset, pixel_base, pixel_tokens, pixel_recipes, pixel_utilities;
+
+:root {
+    --mp-colors-background-surface: #F1F5F9;
+    --mp-colors-background-neutral: #FFFFFF;
+    --mp-colors-border-default: #DCDFE4;
+    --mp-colors-text-default: --mp-colors-neutral-1000;
+    --mp-colors-icon-default: #758195;
+}

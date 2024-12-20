@@ -1,26 +1,22 @@
 <template>
-  <main>
-    <h1>Hello Host</h1>
-    <div>
-      count: <span style="width: 10px">{{ count }}</span>
-    </div>
-    <mp-button @click="handleClick">Click me</mp-button>
-    <hr />
-    <mp-flex mt="10px" justify="center">
-      <RemoteButton />
-    </mp-flex>
-  </main>
+  <div
+    :class="
+      css({
+        px: 5,
+        py: 15
+      })
+    "
+  >
+    <!-- <RemoteButton /> -->
+
+    Dashboard view
+  </div>
 </template>
-<script setup>
-import { MpButton, MpFlex, css } from "@mekari/pixel3";
-import { ref, onMounted } from "vue";
-const count = ref(0);
+<script setup lang="ts">
+import { css } from "@mekari/pixel3";
+import { onMounted } from "vue";
 
 onMounted(() => {
-  console.log("HOST/onMounted");
+  console.log("HOST/onMounted dashboard");
 });
-
-const handleClick = () => {
-  count.value++;
-};
 </script>
